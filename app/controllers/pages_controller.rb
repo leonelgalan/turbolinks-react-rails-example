@@ -4,4 +4,9 @@ class PagesController < ApplicationController
 
   def two
   end
+
+  def three
+    sleep 1
+    render json: { foo: 'bar' }
+  end
 end
